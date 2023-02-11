@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<!--este valor debe ser el mismo que se encuentra en las propiedades de este archivo, clic derecho, propiedades-->
+	<meta charset="UTF-8" />
+	<!--se referencia a la variable titulo, es lo que se mostrara en el html-->
+	<title th:text="${titulo}"></title>
+	<!--se referencia al archivo de estilos. para rutas la regla es @{}-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+	</link>
+</head>
+
+<body>
+	<h1 class="color-rojo" th:text="${titulo}"></h1>
+	<h2 class="color-azul">Decorando con estilos css recursos estáticos</h2>
+	<img th:src="@{/images/spring.png}"></img>
+</body>
+
+</html>

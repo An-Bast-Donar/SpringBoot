@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title th:text="${titulo}">Insert title here</title>
+</head>
+
+<body>
+	<h1 th:text="${titulo}"></h1>
+	<!--mostrar o no mostrar una etiqueta dependiendo de validaciones-->
+	<!--otra forma hubiera podido ser con th:if="${usuarios.size() == 0}-->
+	<div th:if="${usuarios.isEmpty()}">no hay usuarios en la lista!</div>
+	<!--es lo mismo que th:if="${!usuarios.isEmpty()}-->
+	<table th:if="${not usuarios.isEmpty()}">
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Apellido</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!--repeticion de etiquetas gracias al foreach-->
+			<tr th:each="usuario: ${usuarios}">
+				<td th:text="${usuario.nombre}"></td>
+				<td th:text="${usuario.apellido}"></td>
+				<td th:text="${usuario.email}"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+
+</html>
