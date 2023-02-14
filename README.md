@@ -84,3 +84,9 @@ JPA, JPQL, Hibernate y JUnit son tecnologías y herramientas utilizadas en el de
 - JUnit: es un framework de pruebas unitarias para Java. JUnit proporciona una serie de anotaciones y clases para escribir y ejecutar pruebas unitarias automatizadas en aplicaciones Java. Las pruebas unitarias son pruebas automatizadas que se ejecutan en fragmentos aislados de código para asegurar que el código funciona correctamente y no produce errores.
 
 En resumen, JPA y Hibernate son tecnologías utilizadas para persistir objetos Java en una base de datos relacional, mientras que JPQL es un lenguaje de consulta utilizado para buscar y recuperar entidades de una base de datos a través de JPA. JUnit es una herramienta de pruebas unitarias que se utiliza para probar y validar el código Java.
+
+## Pruebas unitarias en springboot
+
+- Es una tecnica para comprobar que un bloque de codigo esta funcionando correctamente
+- TDD: es una practica para pruebas, consta de escribir primero la prueba y luego la solucion, existen otros tipos de practicas para pruebas
+- Junit es una dependencia de java para hacer pruebas al igual que Mockito
